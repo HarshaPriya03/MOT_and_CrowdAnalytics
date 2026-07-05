@@ -84,3 +84,9 @@ But it runs at half the speed — ~0.5 fps vs ~1 fps on CPU. That's a big slowdo
 ### My decision
 
 I went with **YOLOv8m**. It runs slower (about half the speed of YOLOv8n on my CPU), but it gave more stable people-tracking, which matters more for an accurate headcount than raw speed. On a GPU, the speed difference would matter much less, so this trade-off would be an even easier call.
+
+## Future Work
+
+- **Try a bigger ReID model** — I'm using standard OSNet right now. A bigger version of it, or something like DeepSORT's embedding approach, might reduce ID switches further, especially when people cross paths a lot.
+- **Test on GPU** — everything so far ran on CPU (~0.5-1 fps), which is the real bottleneck. On GPU, both the bigger YOLO model and a heavier ReID model would run much faster, so this speed/accuracy trade-off wouldn't matter as much.
+- **Try YOLOv8l or YOLOv8x** — with more speed to spare on GPU, a bigger detection model could help catch more people in the most crowded frames.
