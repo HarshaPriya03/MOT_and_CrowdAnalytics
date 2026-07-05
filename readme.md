@@ -56,7 +56,7 @@ I tested both YOLOv8n and YOLOv8m on the same 422-frame clip with identical trac
 | Total unique IDs | 168 | 148–155 |
 | Churn ratio* | 3.23 | 2.85–3.23 |
 
-<sub>*Churn ratio = total unique IDs ÷ peak concurrent people — a proxy for how much ID fragmentation is happening overall, not just direct switches. YOLOv8m was run twice with identical settings; the range reflects normal run-to-run variance in tracker/ReID matching, not a config difference.</sub>
+<sub>Churn ratio = total unique IDs / peak concurrent people :- a proxy for how much ID fragmentation is happening overall, not just direct switches. YOLOv8m was run twice with identical settings; the range reflects normal run-to-run variance in tracker/ReID matching, not a config difference.</sub>
 
 ### What is churn ratio?
 
@@ -70,7 +70,7 @@ I ran YOLOv8m twice to make sure the results were consistent. The small differen
 
 Before switching models, I tried adjusting tracker thresholds to reduce ID switching, but nothing really improved the churn ratio without also losing people. So I tried YOLOv8m instead, which gave better ID stability at the cost of speed.
 
-The bigger model does give slightly better ID stability — in its best run, it kept the same peak headcount (52) as YOLOv8n but produced fewer duplicate IDs (148 vs 168). This likely happens because YOLOv8m gives more consistent detection confidence frame-to-frame, so the tracker's matching step has cleaner input to work with.
+The bigger model does give slightly better ID stability in its best run, it kept the same peak headcount (52) as YOLOv8n but produced fewer duplicate IDs (148 vs 168). This likely happens because YOLOv8m gives more consistent detection confidence frame-to-frame, so the tracker's matching step has cleaner input to work with.
 
 But it runs at half the speed — ~0.5 fps vs ~1 fps on CPU. That's a big slowdown for a modest tracking improvement.
 
