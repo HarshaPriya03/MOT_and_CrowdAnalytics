@@ -1,0 +1,39 @@
+
+# 1. MODEL CONFIGURATION 
+
+model:
+  weights: "yolov8m.pt"
+  # conf_threshold: 0.25
+  conf_threshold: 0.15
+  iou_threshold: 0.4
+  image_size: 1280
+  classes: [0]
+  device: "auto"
+
+# 2. TRACKER CONFIGURATION 
+
+tracker:
+  type: "botsort (boxmot)"
+  reid_weights: "osnet_x0_25_msmt17.pt"
+  with_reid: true
+  debug: true
+
+  
+  appearance_thresh: 0.45    
+  match_thresh: 0.7 
+  proximity_thresh: 0.4      
+  occlusion_tolerance_sec: 7.0   
+  new_track_thresh: 0.25     
+  track_high_thresh: 0.4    
+  track_low_thresh: 0.08     
+  min_hits: 2
+
+
+annotation:
+  box_color: [0, 255, 0]
+  box_thickness: 2
+  font_scale: 0.6
+  font_thickness: 2
+  hud_color: [0, 255, 255]
+  show_fps: true
+  show_unique_counter: true
