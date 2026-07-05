@@ -12,7 +12,7 @@ Detects, tracks, and counts unique people in crowded video using **YOLO** (detec
 ---
 ## Demo
 
-https://github.com/HarshaPriya03/MOT_and_CrowdAnalytics/raw/main/outputs/result_demo.mp4
+https://github.com/HarshaPriya03/MOT_and_CrowdAnalytics/blob/main/outputs/result.mp4
 ---
 
 ## Setup
