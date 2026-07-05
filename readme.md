@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ## Running it
 
 ```bash
-python main.py --input test.mp4 --output outputs\result.mp4 --model yolov8n.pt
+python main.py --input test.mp4 --output outputs\result.mp4 --model yolov8m.pt
 ```
 
 Optional overrides: `--model`, `--device`, `--conf`, `--iou`, `--log-format`.
