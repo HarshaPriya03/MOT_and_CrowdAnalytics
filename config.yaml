@@ -16,7 +16,7 @@ tracker:
   type: "botsort (boxmot)"
   reid_weights: "osnet_x0_25_msmt17.pt"
   with_reid: true
-  debug: true
+  debug: false
 
   
   appearance_thresh: 0.45    
