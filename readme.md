@@ -20,6 +20,7 @@ python -m venv venv
 venv\Scripts\activate        # Windows
 source venv/bin/activate     # macOS/Linux
 
+# python should be >= 3.10 and < 3.14
 #my python version is 3.13.5
 
 pip install -r requirements.txt
