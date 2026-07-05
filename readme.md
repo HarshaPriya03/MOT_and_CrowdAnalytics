@@ -9,6 +9,11 @@ Detects, tracks, and counts unique people in crowded video using **YOLO** (detec
 ![Architecture](architecture_MOT.png)
 
 ---
+---
+## Demo
+
+https://github.com/HarshaPriya03/MOT_and_CrowdAnalytics/raw/main/outputs/result_demo.mp4
+---
 
 ## Setup
 
