@@ -42,7 +42,7 @@ python main.py --input test.mp4 --output outputs\result.mp4 --model yolov8m.pt
 
 Optional overrides: `--model`, `--device`, `--conf`, `--iou`, `--log-format`.
 
-All other settings (thresholds, occlusion tolerance, output format, etc.) live in `config.yaml` — nothing is hardcoded in the source.
+All other settings (thresholds, occlusion tolerance, output format, etc.) live in `config.yaml` 
 
 **Output:**
 - Annotated video at `--output` path
