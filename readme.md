@@ -13,8 +13,8 @@ Detects, tracks, and counts unique people in crowded video using **YOLO** (detec
 ## Setup
 
 ```bash
-git clone <your-repo-url>
-cd MOT
+git clone https://github.com/HarshaPriya03/MOT_and_CrowdAnalytics
+cd MOT_and_CrowdAnalytics
 
 python -m venv venv
 venv\Scripts\activate        # Windows
